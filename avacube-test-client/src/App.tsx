@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import './App.css';
-// import Avacube from '/Users/coda/GitHub/Avacube-monorepo/packages/avacube-node/src/index';
-import { sendEthSepoliaViaAvacubeAtTime } from '../../packages/avacube-node/examples/sepolia-holesky';
+import { sendEthSepoliaViaAvacubeAtTime } from './avacube-node/examples/sepolia-holesky.ts';
 
 // Define the functional component using React.FC (Functional Component)
 const App: React.FC = () => {
