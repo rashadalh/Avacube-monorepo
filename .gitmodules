@@ -1,1 +1,4 @@
 
+[submodule "avacube-test-client/src/avacube-node"]
+	path = avacube-test-client/src/avacube-node
+	url = https://github.com/codemusket/avacube-node

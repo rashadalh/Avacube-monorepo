@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import './App.css';
 // import Avacube from '/Users/coda/GitHub/Avacube-monorepo/packages/avacube-node/src/index';
-import { sendEthSepoliaViaAvacubeAtTime } from '/Users/coda/GitHub/Avacube-monorepo/packages/avacube-node/examples/sepolia-holesky';
+import { sendEthSepoliaViaAvacubeAtTime } from '../../packages/avacube-node/examples/sepolia-holesky';
 
 // Define the functional component using React.FC (Functional Component)
 const App: React.FC = () => {
@@ -22,7 +22,7 @@ const App: React.FC = () => {
   }, []);
 
   // Function for sending ETH via Sepolia at a specific time
-  const sendEthSepoliaViaAvacubeAtTime = (sendAmt: number, toAddress: string, epochToStartAt: number): void => {
+  const _sendEthSepoliaViaAvacubeAtTime = (sendAmt: number, toAddress: string, epochToStartAt: number): void => {
     console.log("sendEthSepoliaViaAvacubeAtTime Called");
     console.log(`Sending ${sendAmt} ETH to ${toAddress} at epoch time ${epochToStartAt}`);
     alert(`Sending ${sendAmt} ETH to ${toAddress} at epoch time ${epochToStartAt}`);
@@ -73,7 +73,7 @@ const App: React.FC = () => {
 
         {/* Button to Call the Function */}
         <div style={{ margin: '20px' }}>
-          <button onClick={() => sendEthSepoliaViaAvacubeAtTime(sendAmt, toAddress, epochToStartAt)}>
+          <button onClick={() => _sendEthSepoliaViaAvacubeAtTime(sendAmt, toAddress, epochToStartAt)}>
             Send ETH via Sepolia at Specified Time
           </button>
         </div>
